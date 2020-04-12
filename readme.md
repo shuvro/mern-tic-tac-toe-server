@@ -1,4 +1,4 @@
-# Tic-Tac-Toe Server Node.js
+# Tic Tac Toe Server by Node.js
 
 Client Server at https://github.com/shuvro/mern-tic-tac-toe-client.git
 
