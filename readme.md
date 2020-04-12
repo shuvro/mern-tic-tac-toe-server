@@ -23,9 +23,3 @@ npm run dev
 ```bash
 npm test
 ```
-
-### Linting
-
-```bash
-npm run lint
-```
