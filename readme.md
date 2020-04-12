@@ -23,3 +23,14 @@ npm run dev
 ```bash
 npm test
 ```
+
+### Docker
+Run the Game Backend (Node.js) using docker
+
+```bash
+docker-compose up --build
+```
+Checkout the application at 
+```bash
+http://localhost:3000
+```

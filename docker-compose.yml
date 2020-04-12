@@ -1,0 +1,15 @@
+version: "3.7"
+services:
+  react-dev:
+    container_name: node-dev
+    image: shuvro/tic-tac-toe-node
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "4515:4515"
+    volumes:
+      - ".:/app"
+      - "/app/node_modules"
+    environment:
+      - NODE_ENV=development
