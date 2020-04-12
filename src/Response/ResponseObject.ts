@@ -7,7 +7,12 @@ export const responseObject = (message: string | number | null, board: Board, lo
     if (gameOver) {
         const sysWinner = board.getWinner();
         const winner = sysWinner !== null ? sysWinner : 'NOBODY';
-        msg = `GAME OVER! ${winner} has won!`;
+        if (winner == 'NOBODY') {
+            msg = `--- DRAW ---`;
+        } else {
+            msg = `GAME OVER! ${winner} has won!`;
+        }
+
     }
     return {
         message: msg,

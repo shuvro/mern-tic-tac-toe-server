@@ -49,8 +49,7 @@ class App {
             this.gameStarted = true;
             if (this.gameBoard.setMark(parseInt(req.query.x), parseInt(req.query.y))) {
                 const response
-                    = responseObject(`Cell used [x:${req.query.x};y:${req.query.y}]. 
-                        Now it's turn for ${this.gameBoard.getWhosTurn()}`, this.gameBoard, this.actionsLog);
+                    = responseObject(`Index used  { x => ${req.query.x};  y => ${req.query.y} }. Now it's turn for ${this.gameBoard.getWhosTurn()}`, this.gameBoard, this.actionsLog);
                 this.gameBoard.setMessage(response.message.toString());
                 this.addLogMessage(response.message.toString());
                 res.json(response);
